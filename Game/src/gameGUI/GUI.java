@@ -3,10 +3,12 @@ package gameGUI;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 import javax.swing.*;
 
-public class GUI extends JFrame implements ActionListener {
+public class GUI extends JFrame implements ActionListener, KeyListener {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -21,9 +23,7 @@ public class GUI extends JFrame implements ActionListener {
 	
 	//Buttons
 	private JPanel pnlButtons;
-	private final JButton btnInput = new JButton("Enter");
-	private final JButton btnAttack = new JButton("Attack");
-	private final JButton btnDefend = new JButton("Defend");
+	
 	private final JButton btnInventory = new JButton("Inventory");
 	
 	//Stats
@@ -53,6 +53,7 @@ public class GUI extends JFrame implements ActionListener {
 		JScrollPane scrollPane = new JScrollPane(txtInfo);
 		txtInfo.setEditable(false);
 		txtCommand = new JTextField(5);
+		txtCommand.addKeyListener(this);
 		//pnlTextStuff.add(lblInfo);
 		//pnlTextStuff.add(txtInfo);
 		//pnlTextStuff.add(lblCommand);
@@ -72,9 +73,7 @@ public class GUI extends JFrame implements ActionListener {
 		//Buttons
 		pnlButtons = new JPanel();
 		pnlButtons.setLayout(new FlowLayout());
-		pnlButtons.add(btnInput);
-		pnlButtons.add(btnAttack);
-		pnlButtons.add(btnDefend);
+
 		pnlButtons.add(btnInventory) ;
 		
 		//Statistics
@@ -138,8 +137,21 @@ public class GUI extends JFrame implements ActionListener {
 		//JOptionPane.showMessageDialog(null, "Please enter a valid filename");
 	}
 	
-	public void actionPerformed(ActionEvent arg0) {
+	public void actionPerformed(ActionEvent e) {
 		
+		
+	}
+	public void keyPressed(KeyEvent e) {
+		if (e.getKeyCode() == KeyEvent.VK_ENTER)
+		JOptionPane.showMessageDialog(null, "Working Baby!");
+		
+	}
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
 }
