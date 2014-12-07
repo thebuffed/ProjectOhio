@@ -3,6 +3,8 @@
  */
 package monsterPackage;
 
+import itemPackage.Item;
+
 import java.util.ArrayList;
 
 /**
@@ -25,13 +27,13 @@ public abstract class Monster
 	private int agility;
 	
 	//The items a monster has.
-	private ArrayList<item> items;
+	private ArrayList<Item> items;
 	
 
 	/**
 	 * The constructor method for a monster.
 	 */
-	public Monster(int health, int strength, int defense, int agility, ArrayList<item> items)
+	public Monster(int health, int strength, int defense, int agility, ArrayList<Item> items)
 	{
 		this.health = health;
 		this.strength = strength;
@@ -125,7 +127,7 @@ public abstract class Monster
 	 * The items that the monster has.
 	 * @return The items that the monster has.
 	 */
-	public ArrayList<item> getItems()
+	public ArrayList<Item> getItems()
 	{
 		return items;
 	}
@@ -134,7 +136,7 @@ public abstract class Monster
 	 * Sets the items that the monster has.
 	 * @param items The items.
 	 */
-	public void setItems(ArrayList<item> items)
+	public void setItems(ArrayList<Item> items)
 	{
 		this.items = items;
 	}
