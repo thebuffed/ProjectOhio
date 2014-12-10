@@ -7,6 +7,8 @@ import itemPackage.Item;
 
 import java.util.ArrayList;
 
+import monsterPackage.Monster;
+
 /**
  * The class to represent the user/player of the game.
  * @author Michael Santoro
@@ -68,6 +70,29 @@ public class User
 		
 	}
 
+	public void move(String direction)
+	{
+		if(direction.equalsIgnoreCase("north"))
+		{
+			
+		}
+		
+		else if(direction.equalsIgnoreCase("south"))
+		{
+			
+		}
+		
+		else if(direction.equalsIgnoreCase("east"))
+		{
+			
+		}
+		
+		else if(direction.equalsIgnoreCase("west"))
+		{
+			
+		}
+	}
+	
 	/**
 	 * Returns the user's health.
 	 * @return The health

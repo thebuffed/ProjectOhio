@@ -7,6 +7,8 @@ import itemPackage.Item;
 
 import java.util.ArrayList;
 
+import userPackage.User;
+
 /**
  * The abstract class for all monsters in the game.
  * @author Michael Santoro

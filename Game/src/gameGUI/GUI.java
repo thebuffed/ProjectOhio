@@ -8,6 +8,8 @@ import java.awt.event.KeyListener;
 
 import javax.swing.*;
 
+import userPackage.User;
+
 public class GUI extends JFrame implements ActionListener, KeyListener {
 	
 	private static final long serialVersionUID = 1L;
@@ -143,7 +145,7 @@ public class GUI extends JFrame implements ActionListener, KeyListener {
 	}
 	public void keyPressed(KeyEvent e) {
 		if (e.getKeyCode() == KeyEvent.VK_ENTER)
-		JOptionPane.showMessageDialog(null, "Working Baby!");
+			JOptionPane.showMessageDialog(null, "Working Baby!");
 		
 	}
 	public void keyReleased(KeyEvent e) {
